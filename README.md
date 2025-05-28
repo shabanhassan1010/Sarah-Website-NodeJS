@@ -1,53 +1,28 @@
-## Features
+# Features
 
-## Enhanced Security
+## Key Achievements:
+### Security & Authentication
 
-Advanced Authentication Flow
+Implemented JWT-based authentication with access/refresh token rotation
 
-Email OTP verification via sendCode endpoint
+Developed email verification flow using Outlook SMTP integration
 
-JWT refresh token rotation
+Built secure password reset with OTP, Applied password hashing via bcryptjs
 
-Secure password reset & update
+### User Management System
 
-Time-based OTP expiration (10 minutes)
+Created CRUD operations for user profiles with MongoDB , Implemented schema validation and indexing for performance.
 
-End-to-End Encrypted Password Management
+Developed role-based access control prototypes and Added last-seen tracking and account status management.
 
-Token Blacklisting/Whitelisting
+### Real-Time Messaging
 
-Multi-layered Email Verification Flow
+Engineered message schema with sender/receiver relationships and Implemented message status tracking (sent/delivered/read)
 
-Role-Based Access Control (RBAC) Prototyping
+Developed RESTful endpoints for message history retrieval and Added timestamp persistence and virtual population
 
-Comprehensive Error Logging
+### Security Infrastructure
 
-## Real-Time Communication
+Implemented middleware for header security, Added rate limiting for authentication endpoints
 
-User-Specific Message Threads
-
-Per-Recipient Message Retrieval
-
-Secure Message Persistence with MongoDB Atlas
-
-## Tech Stack
-
-Node.js & Express.js
-
-MongoDB Atlas with Mongoose ODM
-
-JWT Authentication & bcryptjs
-
-Nodemailer & crypto
-
-RESTful API Design
-
-## Challenges Tackled
-
-Implemented secure token invalidation
-
-Designed OTP expiration workflows
-
-Built message read-receipts system
-
-Prevented replay attacks in the auth flow
+Configured environment-based secret management and Developed error handling middleware for API protectio
